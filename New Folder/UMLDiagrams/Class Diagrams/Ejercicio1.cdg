@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Ejercicio1">
+  <ClassDiagramComponents>
+    <Class name="Facultad" package="" visibility="public" xPosition="304.0" yPosition="40.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Carrera" package="" visibility="public" xPosition="623.0" yPosition="40.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Asignatura" package="" visibility="public" xPosition="700.0" yPosition="230.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Matricula" package="" visibility="public" xPosition="304.0" yPosition="230.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Alumno" package="" visibility="public" xPosition="58.0" yPosition="230.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Universidad" package="" visibility="public" xPosition="35.0" yPosition="40.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Troncales" package="" visibility="public" xPosition="526.0" yPosition="360.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Obligatorias" package="" visibility="public" xPosition="793.0" yPosition="379.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Optativas" package="" visibility="public" xPosition="951.0" yPosition="258.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="Contiene" source="Universidad" target="Facultad" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <IsRelation name="is" source="Optativas" target="Asignatura"/>
+    <HasRelation name="Contiene" source="Matricula" target="Carrera" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Troncales" target="Asignatura"/>
+    <IsRelation name="is" source="Obligatorias" target="Asignatura"/>
+    <HasRelation name="Contiene" source="Carrera" target="Asignatura" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="Realiza" source="Alumno" target="Matricula" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="Contiene" source="Matricula" target="Asignatura" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="Contiene" source="Facultad" target="Carrera" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,202 @@
+run:
+Probando máquina
+
++------------------------------------------------------+
+| PRUEBAS DE LA JERARQUÍA DE CLASES DEL PAQUETE maquina |
++------------------------------------------------------+
+
+CREACIÓN DE MÁQUINAS
+---------------------
+
+Pruebas de creación de BICICLETAS:
+------------------------------------
+Máquina creada Bicicleta:      { Marca:           ; Modelo:           ; NS: 0   ; Fuerza Motriz: ANIMAL    ; Radio: 33,00; Kilómetros:  0,00 }
+Máquina creada Bicicleta:      { Marca: null      ; Modelo: null      ; NS: 1   ; Fuerza Motriz: ANIMAL    ; Radio: 33,00; Kilómetros:  0,00 }
+Máquina creada Bicicleta:      { Marca: ORBEA     ; Modelo: Orca      ; NS: 2   ; Fuerza Motriz: ANIMAL    ; Radio: 33,00; Kilómetros:  0,00 }
+	 Guardamos artefacto tipo Bicicleta en el array.
+Error en valor del radio: 16,75 cm. Debe estar comprendido entre 17,75 cm. y 36,85 cm.
+Error en valor del radio: 37,85 cm. Debe estar comprendido entre 17,75 cm. y 36,85 cm.
+Máquina creada Bicicleta:      { Marca: ORBEA     ; Modelo: Rallon    ; NS: 3   ; Fuerza Motriz: ANIMAL    ; Radio: 27,30; Kilómetros:  0,00 }
+	 Guardamos artefacto tipo Bicicleta en el array.
+
+Pruebas de creación de MOLINOS:
+---------------------------------
+Máquina creada Molino:         { Marca:           ; Modelo:           ; NS: 4   ; Fuerza Motriz: ELECTRICIDAD; Molino de: ELECTRICO          }
+Máquina creada Molino:         { Marca: IBERDROLA ; Modelo: Eficient  ; NS: 5   ; Fuerza Motriz: VIENTO    ; Molino de: DE_VIENTO          }
+	 Guardamos artefacto tipo Molino en el array.
+Error: null. La fuerza motriz no puede ser nula, debe indicarse una fuerza motriz válida.
+Máquina creada Molino:         { Marca: IBERDROLA ; Modelo: HidroPower; NS: 6   ; Fuerza Motriz: CORRIENTE_AGUA; Molino de: DE_AGUA            }
+	 Guardamos artefacto tipo Molino en el array.
+
+Pruebas de creación de COCHES ELÉCTRICOS:
+-------------------------------------------
+Error: null. La fuerza motriz no puede ser nula, debe indicarse una fuerza motriz válida.
+Error en fuerza Motriz: COMBUSTIBLE. Para un coche eléctrico debe ser necesariamente ELECTRICIDAD. 
+Error en voltaje: 10. v. Valores válidos=> 12 v. en España y Portugal, 24 v. en Francia y Bélgica  y 48 v. en Inglaterra.
+Error en capacidad de batería:    40,00 Valores válidos (en kWh)=> 35.0, 50.0, 75.0, 100.0, 125.0, 150.0, 200.0: 
+Error en autonomía del coche eléctrico: 299,00. Valores válidos=> entre 300,00 y  600,00 kms: 
+Error en autonomía del coche eléctrico: 601,00. Valores válidos=> entre 300,00 y  600,00 kms: 
+Máquina creada CocheElectrico: { Marca: HYUNDAY   ; Modelo: Kona      ; NS: 7   ; Fuerza Motriz: ELECTRICIDAD; Combustible: ELECTRICIDAD   ; Km. sin repostar:    0,00; 
+		 Kilometraje:     0,00 Voltaje:    12 v.; Capacidad batería:    35,00 w.; Autonomía: 450,00 km.;  Carga efectiva:    17,50 w.; 
+		Países compatibles: [España, Portugal]}
+	 Guardamos artefacto tipo CocheElectrico en el array.
+
+Pruebas de creación de BATIDORAS:
+-------------------------------------------
+Máquina creada Batidora:       { Marca:           ; Modelo:           ; NS: 8   ; Voltaje:    230 v.; Potencia: 700,00 W.; 
+		Países compatibles: [España, Alemania, Francia, Bélgica] }
+	 Guardamos artefacto tipo Batidora en el array.
+Error en potencia eléctrica: 900,00. (Valores válidos: 500/600/700/800/1000/1200/1500 w.). 
+Error en voltaje: 100 (Valores válidos: Japón/Corea: 110v.; USA: 120v.; China: 220v.; España/Alemania/Francia/Bélgica: 230v.). 
+Máquina creada Batidora:       { Marca: PHILIPS   ; Modelo: Promix    ; NS: 9   ; Voltaje:    230 v.; Potencia: 700,00 W.; 
+		Países compatibles: [España, Alemania, Francia, Bélgica] }
+	 Guardamos artefacto tipo Batidora en el array.
+
+Pruebas de creación de CALCULADORAS:
+-------------------------------------------
+Error en tipo de pila: null. El tipo de pila no puede ser nulo.
+Error en tipo de pila: C_1_5V. Las calculadoras solo admiten pilas de tipo AA_1_5V y BOTON_CR1025_3V 
+Máquina creada Calculadora:    { Marca: CASIO     ; Modelo: FX-991SPXI; NS: 10  ; Voltaje:     10 v.; Potencia: 700,00 W.; Tipo pila: AA_1_5V Horas de uso restantes:   0,00}
+	 Guardamos artefacto tipo Calculadora en el array.
+Máquina creada Calculadora:    { Marca: CASIO     ; Modelo: FX-991SPXI; NS: 11  ; Voltaje:     10 v.; Potencia: 700,00 W.; Tipo pila: AA_1_5V Horas de uso restantes: 100,00}
+	 Guardamos artefacto tipo Calculadora en el array.
+
+--------------------------------
+MÁQUINAS INCLUIDAS EN EL ARRAY:
+--------------------------------
+MÁQUINA 0: Bicicleta:      { Marca: ORBEA     ; Modelo: Orca      ; NS: 2   ; Fuerza Motriz: ANIMAL    ; Radio: 33,00; Kilómetros:  0,00 }
+MÁQUINA 1: Bicicleta:      { Marca: ORBEA     ; Modelo: Rallon    ; NS: 3   ; Fuerza Motriz: ANIMAL    ; Radio: 27,30; Kilómetros:  0,00 }
+MÁQUINA 2: Molino:         { Marca: IBERDROLA ; Modelo: Eficient  ; NS: 5   ; Fuerza Motriz: VIENTO    ; Molino de: DE_VIENTO          }
+MÁQUINA 3: Molino:         { Marca: IBERDROLA ; Modelo: HidroPower; NS: 6   ; Fuerza Motriz: CORRIENTE_AGUA; Molino de: DE_AGUA            }
+MÁQUINA 4: CocheElectrico: { Marca: HYUNDAY   ; Modelo: Kona      ; NS: 7   ; Fuerza Motriz: ELECTRICIDAD; Combustible: ELECTRICIDAD   ; Km. sin repostar:    0,00; 
+		 Kilometraje:     0,00 Voltaje:    12 v.; Capacidad batería:    35,00 w.; Autonomía: 450,00 km.;  Carga efectiva:    17,50 w.; 
+		Países compatibles: [España, Portugal]}
+MÁQUINA 5: Batidora:       { Marca:           ; Modelo:           ; NS: 8   ; Voltaje:    230 v.; Potencia: 700,00 W.; 
+		Países compatibles: [España, Alemania, Francia, Bélgica] }
+MÁQUINA 6: Batidora:       { Marca: PHILIPS   ; Modelo: Promix    ; NS: 9   ; Voltaje:    230 v.; Potencia: 700,00 W.; 
+		Países compatibles: [España, Alemania, Francia, Bélgica] }
+MÁQUINA 7: Calculadora:    { Marca: CASIO     ; Modelo: FX-991SPXI; NS: 10  ; Voltaje:     10 v.; Potencia: 700,00 W.; Tipo pila: AA_1_5V Horas de uso restantes:   0,00}
+MÁQUINA 8: Calculadora:    { Marca: CASIO     ; Modelo: FX-991SPXI; NS: 11  ; Voltaje:     10 v.; Potencia: 700,00 W.; Tipo pila: AA_1_5V Horas de uso restantes: 100,00}
+
+-----------------------------------
+TOTAL DE MÁQUINAS INTRODUCIDAS: 9 
+-----------------------------------
+
+----------------------------------------
+PRUEBA DE MÉTODOS DE LA INTERFAZ Desplazable
+----------------------------------------
+
+Máguina 0: Bicicleta:      { Marca: ORBEA     ; Modelo: Orca      ; NS: 2   ; Fuerza Motriz: ANIMAL    ; Radio: 33,00; Kilómetros:  0,00 }
+Kilómetros recorridos sin repostar: 0,00, Total Kilómetros: 0,00, Desplazar 40.5 km., Kilómetros recorridos sin repostar: 40,50, Total Kilómetros: 40,50, 
+Máguina 1: Bicicleta:      { Marca: ORBEA     ; Modelo: Rallon    ; NS: 3   ; Fuerza Motriz: ANIMAL    ; Radio: 27,30; Kilómetros:  0,00 }
+Kilómetros recorridos sin repostar: 0,00, Total Kilómetros: 0,00, Desplazar 40.5 km., Kilómetros recorridos sin repostar: 40,50, Total Kilómetros: 40,50, 
+Máguina 2: Molino:         { Marca: IBERDROLA ; Modelo: Eficient  ; NS: 5   ; Fuerza Motriz: VIENTO    ; Molino de: DE_VIENTO          }
+
+Error. class maquina.Molino cannot be cast to class maquina.Desplazable.
+
+Máguina 3: Molino:         { Marca: IBERDROLA ; Modelo: HidroPower; NS: 6   ; Fuerza Motriz: CORRIENTE_AGUA; Molino de: DE_AGUA            }
+
+Error. class maquina.Molino cannot be cast to class maquina.Desplazable.
+
+Máguina 4: CocheElectrico: { Marca: HYUNDAY   ; Modelo: Kona      ; NS: 7   ; Fuerza Motriz: ELECTRICIDAD; Combustible: ELECTRICIDAD   ; Km. sin repostar:    0,00; 
+		 Kilometraje:     0,00 Voltaje:    12 v.; Capacidad batería:    35,00 w.; Autonomía: 450,00 km.;  Carga efectiva:    17,50 w.; 
+		Países compatibles: [España, Portugal]}
+Kilómetros recorridos sin repostar: 0,00, Total Kilómetros: 0,00, Desplazar 40.5 km., Kilómetros recorridos sin repostar: 40,50, Total Kilómetros: 40,50, 
+Máguina 5: Batidora:       { Marca:           ; Modelo:           ; NS: 8   ; Voltaje:    230 v.; Potencia: 700,00 W.; 
+		Países compatibles: [España, Alemania, Francia, Bélgica] }
+
+Error. class maquina.Batidora cannot be cast to class maquina.Desplazable.
+
+Máguina 6: Batidora:       { Marca: PHILIPS   ; Modelo: Promix    ; NS: 9   ; Voltaje:    230 v.; Potencia: 700,00 W.; 
+		Países compatibles: [España, Alemania, Francia, Bélgica] }
+
+Error. class maquina.Batidora cannot be cast to class maquina.Desplazable.
+
+Máguina 7: Calculadora:    { Marca: CASIO     ; Modelo: FX-991SPXI; NS: 10  ; Voltaje:     10 v.; Potencia: 700,00 W.; Tipo pila: AA_1_5V Horas de uso restantes:   0,00}
+
+Error. class maquina.Calculadora cannot be cast to class maquina.Desplazable.
+
+Máguina 8: Calculadora:    { Marca: CASIO     ; Modelo: FX-991SPXI; NS: 11  ; Voltaje:     10 v.; Potencia: 700,00 W.; Tipo pila: AA_1_5V Horas de uso restantes: 100,00}
+
+Error. class maquina.Calculadora cannot be cast to class maquina.Desplazable.
+
+----------------------------------------
+PRUEBA DE MÉTODOS DE LA INTERFAZ Recargable
+----------------------------------------
+
+Máguina 0: Bicicleta:      { Marca: ORBEA     ; Modelo: Orca      ; NS: 2   ; Fuerza Motriz: ANIMAL    ; Radio: 33,00; Kilómetros: 40,50 }
+
+Error. class maquina.Bicicleta cannot be cast to class maquina.Recargable.
+
+Máguina 1: Bicicleta:      { Marca: ORBEA     ; Modelo: Rallon    ; NS: 3   ; Fuerza Motriz: ANIMAL    ; Radio: 27,30; Kilómetros: 40,50 }
+
+Error. class maquina.Bicicleta cannot be cast to class maquina.Recargable.
+
+Máguina 2: Molino:         { Marca: IBERDROLA ; Modelo: Eficient  ; NS: 5   ; Fuerza Motriz: VIENTO    ; Molino de: DE_VIENTO          }
+
+Error. class maquina.Molino cannot be cast to class maquina.Recargable.
+
+Máguina 3: Molino:         { Marca: IBERDROLA ; Modelo: HidroPower; NS: 6   ; Fuerza Motriz: CORRIENTE_AGUA; Molino de: DE_AGUA            }
+
+Error. class maquina.Molino cannot be cast to class maquina.Recargable.
+
+Máguina 4: CocheElectrico: { Marca: HYUNDAY   ; Modelo: Kona      ; NS: 7   ; Fuerza Motriz: ELECTRICIDAD; Combustible: ELECTRICIDAD   ; Km. sin repostar:   40,50; 
+		 Kilometraje:    40,50 Voltaje:    12 v.; Capacidad batería:    35,00 w.; Autonomía: 450,00 km.;  Carga efectiva:    14,35 w.; 
+		Países compatibles: [España, Portugal]}
+Consumir batería (para 50 unidades de consumo).  Restante: 10,46. Estado: { Marca: HYUNDAY   ; Modelo: Kona      ; NS: 7   ; Fuerza Motriz: ELECTRICIDAD; Combustible: ELECTRICIDAD   ; Km. sin repostar:   40,50; 
+		 Kilometraje:    40,50 Voltaje:    12 v.; Capacidad batería:    35,00 w.; Autonomía: 450,00 km.;  Carga efectiva:    14,35 w.; 
+		Países compatibles: [España, Portugal]}, Cargar batería:Estado: { Marca: HYUNDAY   ; Modelo: Kona      ; NS: 7   ; Fuerza Motriz: ELECTRICIDAD; Combustible: ELECTRICIDAD   ; Km. sin repostar:    0,00; 
+		 Kilometraje:    40,50 Voltaje:    12 v.; Capacidad batería:    35,00 w.; Autonomía: 450,00 km.;  Carga efectiva:    35,00 w.; 
+		Países compatibles: [España, Portugal]}, 
+Máguina 5: Batidora:       { Marca:           ; Modelo:           ; NS: 8   ; Voltaje:    230 v.; Potencia: 700,00 W.; 
+		Países compatibles: [España, Alemania, Francia, Bélgica] }
+
+Error. class maquina.Batidora cannot be cast to class maquina.Recargable.
+
+Máguina 6: Batidora:       { Marca: PHILIPS   ; Modelo: Promix    ; NS: 9   ; Voltaje:    230 v.; Potencia: 700,00 W.; 
+		Países compatibles: [España, Alemania, Francia, Bélgica] }
+
+Error. class maquina.Batidora cannot be cast to class maquina.Recargable.
+
+Máguina 7: Calculadora:    { Marca: CASIO     ; Modelo: FX-991SPXI; NS: 10  ; Voltaje:     10 v.; Potencia: 700,00 W.; Tipo pila: AA_1_5V Horas de uso restantes:   0,00}
+Consumir batería (para 50 unidades de consumo).  Restante: 0,00. Estado: { Marca: CASIO     ; Modelo: FX-991SPXI; NS: 10  ; Voltaje:     10 v.; Potencia: 700,00 W.; Tipo pila: AA_1_5V Horas de uso restantes:   0,00}, Cargar batería:Estado: { Marca: CASIO     ; Modelo: FX-991SPXI; NS: 10  ; Voltaje:     10 v.; Potencia: 700,00 W.; Tipo pila: AA_1_5V Horas de uso restantes: 100,00}, 
+Máguina 8: Calculadora:    { Marca: CASIO     ; Modelo: FX-991SPXI; NS: 11  ; Voltaje:     10 v.; Potencia: 700,00 W.; Tipo pila: AA_1_5V Horas de uso restantes: 100,00}
+Consumir batería (para 50 unidades de consumo).  Restante: 50,00. Estado: { Marca: CASIO     ; Modelo: FX-991SPXI; NS: 11  ; Voltaje:     10 v.; Potencia: 700,00 W.; Tipo pila: AA_1_5V Horas de uso restantes:  50,00}, Cargar batería:Estado: { Marca: CASIO     ; Modelo: FX-991SPXI; NS: 11  ; Voltaje:     10 v.; Potencia: 700,00 W.; Tipo pila: AA_1_5V Horas de uso restantes: 100,00}, 
+----------------------------------------
+PRUEBA DE MÉTODOS DE LA INTERFAZ Enchufable
+----------------------------------------
+
+Máguina 0: Bicicleta:      { Marca: ORBEA     ; Modelo: Orca      ; NS: 2   ; Fuerza Motriz: ANIMAL    ; Radio: 33,00; Kilómetros: 40,50 }
+
+Error. class maquina.Bicicleta cannot be cast to class maquina.Enchufable.
+
+Máguina 1: Bicicleta:      { Marca: ORBEA     ; Modelo: Rallon    ; NS: 3   ; Fuerza Motriz: ANIMAL    ; Radio: 27,30; Kilómetros: 40,50 }
+
+Error. class maquina.Bicicleta cannot be cast to class maquina.Enchufable.
+
+Máguina 2: Molino:         { Marca: IBERDROLA ; Modelo: Eficient  ; NS: 5   ; Fuerza Motriz: VIENTO    ; Molino de: DE_VIENTO          }
+
+Error. class maquina.Molino cannot be cast to class maquina.Enchufable.
+
+Máguina 3: Molino:         { Marca: IBERDROLA ; Modelo: HidroPower; NS: 6   ; Fuerza Motriz: CORRIENTE_AGUA; Molino de: DE_AGUA            }
+
+Error. class maquina.Molino cannot be cast to class maquina.Enchufable.
+
+Máguina 4: CocheElectrico: { Marca: HYUNDAY   ; Modelo: Kona      ; NS: 7   ; Fuerza Motriz: ELECTRICIDAD; Combustible: ELECTRICIDAD   ; Km. sin repostar:    0,00; 
+		 Kilometraje:    40,50 Voltaje:    12 v.; Capacidad batería:    35,00 w.; Autonomía: 450,00 km.;  Carga efectiva:    35,00 w.; 
+		Países compatibles: [España, Portugal]}
+Voltaje;  12. Países compatibles: [España, Portugal] 
+Máguina 5: Batidora:       { Marca:           ; Modelo:           ; NS: 8   ; Voltaje:    230 v.; Potencia: 700,00 W.; 
+		Países compatibles: [España, Alemania, Francia, Bélgica] }
+Voltaje; 230. Países compatibles: [España, Alemania, Francia, Bélgica] 
+Máguina 6: Batidora:       { Marca: PHILIPS   ; Modelo: Promix    ; NS: 9   ; Voltaje:    230 v.; Potencia: 700,00 W.; 
+		Países compatibles: [España, Alemania, Francia, Bélgica] }
+Voltaje; 230. Países compatibles: [España, Alemania, Francia, Bélgica] 
+Máguina 7: Calculadora:    { Marca: CASIO     ; Modelo: FX-991SPXI; NS: 10  ; Voltaje:     10 v.; Potencia: 700,00 W.; Tipo pila: AA_1_5V Horas de uso restantes: 100,00}
+
+Error. class maquina.Calculadora cannot be cast to class maquina.Enchufable.
+
+Máguina 8: Calculadora:    { Marca: CASIO     ; Modelo: FX-991SPXI; NS: 11  ; Voltaje:     10 v.; Potencia: 700,00 W.; Tipo pila: AA_1_5V Horas de uso restantes: 100,00}
+
+Error. class maquina.Calculadora cannot be cast to class maquina.Enchufable.
+BUILD SUCCESSFUL (total time: 0 seconds)
